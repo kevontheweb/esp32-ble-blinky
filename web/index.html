@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BLE LED Controller</title>
+</head>
+
+<body>
+  <h1>BLE LED Controller</h1>
+  <button onclick="toggleLED('on')">Turn On</button>
+  <button onclick="toggleLED('off')">Turn Off</button>
+
+  <script>
+    function toggleLED(state) {
+      fetch(`/led?state=${state}`)
+        .then(response => response.json())
+        .then(data => alert(data.status || data.error))
+        .catch(error => console.error('Error:', error));
+    }
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,8 @@
+bleak==0.22.3
+dbus-fast==2.30.2
+enum-compat==0.0.3
+pexpect==4.9.0
+pip==25.0
+ptyprocess==0.7.0
+pygatt==5.0.0
+pyserial==3.5

@@ -1,0 +1,1 @@
+this web app hosts a page that should be accessible on your local network, the device that is hosting must have BLE capabilities. it essentially relays the start/stop command from the user input on the web page to a ble command
